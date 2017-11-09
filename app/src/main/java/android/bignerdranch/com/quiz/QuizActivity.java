@@ -32,7 +32,7 @@ public class QuizActivity extends AppCompatActivity {
     };
 
     private void updateQuestion(){
-        Log.d(TAG,"Обновление вопросов  текст вопроса "+mCurrentIndex,new Exception());
+       // Log.d(TAG,"Обновление вопросов  текст вопроса "+mCurrentIndex,new Exception());
         int question = mQuestionBank[mCurrentIndex].getQuestion();
         mQuestionTextView.setText(question);
     }
@@ -104,7 +104,7 @@ public class QuizActivity extends AppCompatActivity {
         mNextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-              //  mCurrentIndex=(mCurrentIndex+1)%mQuestionBank.length;
+              mCurrentIndex=(mCurrentIndex+1)%mQuestionBank.length;
 
               updateQuestion();
             }
