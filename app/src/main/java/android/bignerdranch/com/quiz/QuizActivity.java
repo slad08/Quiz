@@ -33,6 +33,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private void updateQuestion(){
        // Log.d(TAG,"Обновление вопросов  текст вопроса "+mCurrentIndex,new Exception());
+        //Обновлено для commit3
         int question = mQuestionBank[mCurrentIndex].getQuestion();
         mQuestionTextView.setText(question);
     }
